@@ -36,7 +36,7 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  padding: 1rem 15%;
+  padding: 1rem 18%;
   background-color: var(--sbg);
   display: flex;
   justify-content: space-between;
@@ -95,10 +95,17 @@ span {
 
 /* ------------ Navbar ------------ */
 
+.navbar{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 4rem;
+}
+
 .navbar a {
   font-size: 2rem;
   color: var(--t);
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
   font-weight: 500;
   transition: 0.3s ease-in-out;
   border-bottom: 3px solid transparent;
@@ -350,7 +357,16 @@ footer span {
   color: transparent;
 }
 
-@media(max-width:1480px){
+@media(max-width:1280px){
+
+  .header {
+    padding: 1.6rem 5%;
+  }
+
+  .logo span{
+      font-size: 35px;
+    
+  }
 
   .gradient-btn{
     display: none;
